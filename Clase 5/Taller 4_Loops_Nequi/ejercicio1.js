@@ -1,3 +1,4 @@
+
 const movimientos= [20000, -20000, 50000, -25000, 100000, -45000];
 let total = 0;
 let cantidadRetiros= 0;
@@ -9,6 +10,7 @@ for (let i = 0; i < movimientos.length; i++){
         cantidadRetiros = cantidadRetiros + 1;
     }
 
+
 }
 
-console.log("El total es:" + total, "la cantidad de retiros es :" + cantidadRetiros);
+    console.log("El total es:" + total, "la cantidad de retiros es :" + cantidadRetiros);
