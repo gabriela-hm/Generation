@@ -1,5 +1,5 @@
-async function obtenerPokemon() {
-  const pokemon = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+async function obtenerPokemon(pikachu) {
+  const pokemon = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu.toLowerCase()")
   const datos = await pokemon.json();
   console.log(datos);
 
