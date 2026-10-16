@@ -1,0 +1,146 @@
+/* Configuración general*/
+* {
+    box-sizing: border-box; /* Incluye el padding y el borde al ancho y alto total */
+    margin: 0; /* Elimina el margen exterior */
+    padding: 0; /* Elimina el relleno interior */
+    font-family: 'Montserrat', sans-serif ; /* Fuente */
+}
+
+body {
+    background-color: #eed0d0; /* color de fondo */
+    display: flex; /* contenedor flexible para alinear y distribuir sus elementos hijos */
+    justify-content: center; /* centra los elementos hijos horizontal */
+    align-items: center; /* centra vertical, pero es necesario o sino centra el elemento arriba */
+    min-height: 800px; /* altura min del contenedor */
+}
+
+/* Contenedor main de la tarjeta */
+main {
+    background: #ffffff;/* fondo del elemnto */
+    width: 650px; /* ancho fijo para el elemento */
+    padding: 20px; /* espacio de relleno en todos los lados del elemento */
+    border-radius: 17px; /* redondea las esquinas */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* sombra, desplazamiento horizontal,*/ 
+    position: relative; /* posiciona el elemento respecto a su lugar original */
+    overflow: hidden; /* oculta lo que sale del borde */
+}
+
+/* Encabezado */
+#Encabezado {
+    border-bottom: 1px solid #1c1a1a;/* dibuja una linea fina abajo de la clase */
+    padding-bottom: 15px; /* espacio interno */
+    margin-bottom: 20px; /* espacio externo */
+}
+/* Contenedor de la franja superior*/
+.bandera-superior {
+    display: flex; /* contenedor flexible */
+    height: 8px; /* Altura de la franja */
+    width: 100%; /* ancho de la franja */
+    position: absolute; /* ppsicion exacta dentro de su caja de referencia */
+    top: 0; /* pega el elemento al borde de arriba */
+    left: 0; /* pega el elemento al borde de la izquierda */
+}
+
+/* Franjas individuales  */
+.bandera-superior .gris {
+    background-color: #2d3748; /* color del fondo */
+    flex: 1; /* reparte el espacio entre las franjas*/
+}
+
+.bandera-superior .azul {
+    background-color: #003366;
+    flex: 1;
+}
+
+.bandera-superior .azul-claro {
+    background-color: #718096;
+    flex: 1;
+}
+
+#Encabezado h1 {
+    font-size: 26px;/* tamaño */
+    color: #1a365d; /* color */
+    letter-spacing: 2px; /* espacio  */
+}
+
+#Encabezado .sub-titulo {
+    font-size: 14px; /* tamaño */
+    color: #718096; /* color */
+    text-transform: uppercase; /* texto a mayúsculas */
+    letter-spacing: 0.5px; /* espacio */
+    margin-top: 4px; /* espacio externo superior */
+}
+
+/* Sección de Información y Foto */
+#informacion {
+    display: flex;/* contenedor flexible */
+    gap: 25px; /* espacios entre los elementos internos */
+    align-items: center; /* centra los elementos en sentido vertical */
+}
+
+
+.contenedor-foto img {
+    width: 170px;/* ancho para la foto */
+    height: 210px;/* alto */
+    object-fit: cover; /*llena el espacio sin deformarse la foto  */
+    border-radius: 12px; /* borde esquinas */
+    border: 3px solid #cbd5e0; /* borde color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* sombra */
+}
+
+/* Estilos para los datos internos */
+#informacion div:nth-child(2) { /* selecciona el div 2 */
+    display: grid; /* elementos en columnas */
+    grid-template-columns: 1fr 1fr; /* numero de columnas */
+    gap: 12px 20px; /* espacio entre filas y columnas */
+    width: 100%; /* ancho */
+}
+
+/* Ajustes de tipografía para los campos de texto */
+#informacion h2 {
+    font-size: 11px;
+    color: #a0aec0;
+    text-transform: uppercase;
+    grid-column: span 2; /* ocupa dos columnas */
+    margin-bottom: -10px; /* acerca el elemento de abajo a èl */
+}
+
+#informacion p {
+    font-size: 15px;
+    color: #2d3748;
+}
+
+/* Destacar el rol y nombre completo */
+#informacion p:nth-of-type(1) {
+    font-weight: bold;/* negrita */
+    color: #1a365d;
+    font-size: 18px;
+    grid-column: span 2; /* ocupa dos columnas */
+}
+
+
+
+/* Iconos y tecnologías */
+#informacion i {
+    margin-right: 12px; /* margen al lado derecho */
+    color: #248aa9;
+}
+
+/* Pie de página de la credencial */
+#pie {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #1c1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #4a5568;
+    margin-right: 20px;
+}
+
+
+
+#pie p i {
+    margin-right: 6px;
+}
